@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import { TrendingUp, Wallet, PieChart, ArrowRight } from "lucide-react";
+import { TrendingUp, Wallet, PieChart, ArrowRight, CalendarClock, HardDriveDownload, BriefcaseBusiness } from "lucide-react";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -83,26 +83,9 @@ const Index = () => {
           <Card className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
             <CardHeader>
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-primary" />
+                <BriefcaseBusiness className="w-6 h-6 text-primary" />
               </div>
-              <CardTitle>Growth Insights</CardTitle>
-              <CardDescription>
-                Make informed decisions with data-driven insights
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                Identify trends and optimize your business spending patterns.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
-            <CardHeader>
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-primary" />
-              </div>
-              <CardTitle>Growth Insights</CardTitle>
+              <CardTitle>Investment - Profit</CardTitle>
               <CardDescription>
                 Make informed decisions with data-driven insights
               </CardDescription>
@@ -118,19 +101,39 @@ const Index = () => {
           <Card className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
             <CardHeader>
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-primary" />
+                <CalendarClock className="w-6 h-6 text-primary" />
               </div>
-              <CardTitle>Growth Insights</CardTitle>
+              <CardTitle>Weekly - Montly Updates</CardTitle>
               <CardDescription>
-                Make informed decisions with data-driven insights
+                Expenditure Updates sent to your email - Weekly - Monthly
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Identify trends and optimize your business spending patterns.
+                Easily stay informed about your spending habits with regular email updates.
               </p>
             </CardContent>
           </Card>
+
+
+          <Card className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+            <CardHeader>
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <HardDriveDownload className="w-6 h-6 text-primary" />
+              </div>
+              <CardTitle>Download</CardTitle>
+              <CardDescription>
+                Know your expenditure data in Excel for easy analysis and record-keeping.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">
+                Export your financial data effortlessly to Excel format for further analysis and reporting.
+              </p>
+            </CardContent>
+          </Card>
+
+
         </div>
       </div>
     </div>
