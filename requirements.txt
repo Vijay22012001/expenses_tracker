@@ -1,10 +1,26 @@
-fastapi
-uvicorn[standard]
-sqlalchemy
-pydantic
-passlib[bcrypt]
-python-jose[cryptography]
-email-validator
-python-dotenv
-yagmail
-python-multipart
+# ---- Core Framework ----
+fastapi==0.115.0
+uvicorn[standard]==0.31.1
+
+# ---- Database ----
+SQLAlchemy==2.0.36
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# ---- Auth & Security ----
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+
+# ---- Email & Env ----
+email-validator==2.2.0
+python-dotenv==1.0.1
+yagmail==0.15.293
+
+# ---- Form Upload Support ----
+python-multipart==0.0.9
+
+# ---- Optional Utilities ----
+requests==2.32.3
+
+
+jinja2
